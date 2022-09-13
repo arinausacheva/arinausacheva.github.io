@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+  <head>
+    <title>Гиперссылки и форма</title>
+  </head>
+
+  <body>
+      <map name = "figuri" >
+			<area shape = "rect" coords = "25,25,125,125" href = "info1.html" alt = "квадрат" >
+			<area shape = "circle" coords = "250,75,50" href = "info2.html" alt = "круг." >
+		</map>
+      
+      <ul>
+      <li><a href="#spisok" title="Нумерованный список ссылок">Нумерованный список ссылок</a></li>
+      <li><a href="#Forma" title="Форма">Форма</a></li>
+    </ul>
+    <h1>Гиперссылки</h1>
+    <ol id="spisok">
+      <li><a href="example.com">Aбсолютная гиперссылка</a></li>
+      <li><a href="https://example.com">Aбсолютная гиперссылка в протоколе</a></li>
+      <li><a href="ftp://example.com/file.txt">Cсылка на файл на сервере FTP без авторизации</a></li>
+      <li><a href="ftp://user:pass@example.com/file.txt">Cсылка на файл на сервере FTP с авторизацией</a></li>
+      <li><a href="https://ru.wikipedia.org/wiki/Сон">Ссылка на фрагмент страницы некоторого сайта</a></li>
+      <li><a href="info.html#back">Ссылка на фрагмент текущей страницы</a></li>
+      <li><a href="https://example.com/URL?a&b">Ссылка с двумя параметрами в URL</a></li>
+      <li><a href="#one" title="Первая ссылка">Первая с title </a><a href="#two" title="Вторая ссылка">Вторая с title </a> <a href="#three" title="Третья ссылка">Третья с title</a></li>
+      <li><a>Ссылка без href</a></li>
+      <li><a href="">Ссылка с пустым href</a></li>
+      <li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+      <!--noindex--><li><a href="https://example.com">Ссылка, запрещенная для индексации поисковиками</a></li><!--/noindex-->
+      <li><p>Сон - это <a href="https://example.com">физиологическое состояние,</a> характеризующееся пониженной реакцией на окружающий мир</p></li>
+      <li><a href="https://example.com"><img src="https://www.memotest.ru//ImageUpload/a6167246-2d31-4649-9df8-1de8c42f5d2c/Dog-Tired-30.jpg" alt=""></a>"
+      <br>Ссылка-изображение</li>
+      <li><img src="Dog-Tired-30.jpg" usemap="#figuri" alt="">
+      <br>Ссылки из прямоугольных и круглых областей картинки</li>
+      <li><a href="info.html">Относительная на страницу в текущем каталоге</a></li>
+      <li><a href="./about/info.html"> Относительная на страницу в каталоге about</a></li>
+      <li><a href="./">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+      <li><a href="../">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+      <li><a href="/">Сокращенная на главную</a></li>
+      <li><a href="/asd">Сокращенная ссылку на внутреннюю</a></li>
+    </ol>
+
+    <h2 id = "Forma">Форма HTML</h2>
+      
+
+    <form action="/"
+      method="POST">
+
+      <label>
+        Введите имя:<br />
+        <input name="field-name-1" />
+      </label><br />
+
+      <label>
+        Введите ваш email:<br />
+        <input name="field-email"
+          type="email" />
+      </label><br />
+
+      <label>
+        Введите вашу дату рождения:<br />
+        <input name="field-date"
+          type="date" />
+      </label><br />
+        
+        Пол:<br />
+      <label><input type="radio"
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Женский</label><br />
+        
+        Насколько сильно вы хотите спать:<br />
+      <label><input type="radio" 
+        name="radio-group-2" value="Значение1" />
+        1</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        2</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение3" />
+        3</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение4" />
+        4</label>
+       <label><input type="radio"
+        name="radio-group-2" value="Значение5" />
+        5+</label><br />
+        
+        <label>
+        Чем чаще всего вы заняты:<br />
+        <select name="field-name-2">
+          <option value="Значение1">Сплю</option>
+          <option value="Значение2">Ем</option>
+          <option value="Значение3">Смотрю сериалы</option>
+        </select>
+      </label><br />
+
+
+
+      <label>
+        Ваша биография:<br />
+        <textarea name="field-name-3"></textarea>
+      </label><br />
+
+
+
+      <br />
+      <label> 
+          С анкетой ознакомлен(a)
+        <input type="checkbox" 
+        name="check-1" />
+          </label><br /> 
+
+     
+      <input type="submit" value="Отправить" />
+    </form>
+
+  </body>
+
+</html> 
