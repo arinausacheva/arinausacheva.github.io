@@ -1,125 +1,200 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>УсачеваА</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <header>
+            <img alt="Голова" style="float:left;padding: 10px 20px; width: 120px; height: 120px;"
+                 src="https://avatars.mds.yandex.net/i?id=dbd1c59b64dd6793f3fb49e51a9321da-5289342-images-thumbs&n=13" />
+            <br />
+            <p id="Основа" style="font-size:50px; font-family : LATHA; text-align:left"><em>Mopsov_net</em></p>
+    </header>
+    <br />
+    <nav>
+        <h1>
+            <a style="font-size:30px">Меню</a>
+        </h1>
+        <h2>
+            <a href="#p1">Гиперссылки</a>
+            <a href="#p2">Таблица</a>
+            <a href="#p3">Форма</a>
+        </h2>
+    </nav>
 
-  <head>
-    <title>Гиперссылки и форма</title>
-  </head>
+    <br />
+    <!--Гиперссылки-->
+    <div id="p1">
+        <h2>Гиперссылки</h2>
+        <ol>
+            <li><a href="http://example.com"> Первый</a></li>
+            <li><a href="https://example.com"> Второй</a></li>
+            <li><a href="ftp://tavalik.ru/Temp/file.txt"> Третье</a></li>
+            <li><a href="ftp://user:123password@tavalik.ru/Temp/file.txt"> Четвертое</a></li>
+            <li><a href="http://example.com/page#about">Пятое</a></li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="http://example.com/?value=parametr&size=l"> Седьмой</a></li>
+            <li>
 
-  <body>
-      <map name = "figuri" >
-			<area shape = "rect" coords = "25,25,125,125" href = "info1.html" alt = "квадрат" >
-			<area shape = "circle" coords = "250,75,50" href = "info2.html" alt = "круг." >
-		</map>
-      
-      <ul>
-      <li><a href="#spisok" title="Нумерованный список ссылок">Нумерованный список ссылок</a></li>
-      <li><a href="#Forma" title="Форма">Форма</a></li>
-    </ul>
-    <h1>Гиперссылки</h1>
-    <ol id="spisok">
-      <li><a href="example.com">Aбсолютная гиперссылка</a></li>
-      <li><a href="https://example.com">Aбсолютная гиперссылка в протоколе</a></li>
-      <li><a href="ftp://example.com/file.txt">Cсылка на файл на сервере FTP без авторизации</a></li>
-      <li><a href="ftp://user:pass@example.com/file.txt">Cсылка на файл на сервере FTP с авторизацией</a></li>
-      <li><a href="https://ru.wikipedia.org/wiki/Сон">Ссылка на фрагмент страницы некоторого сайта</a></li>
-      <li><a href="info.html#back">Ссылка на фрагмент текущей страницы</a></li>
-      <li><a href="https://example.com/URL?a&b">Ссылка с двумя параметрами в URL</a></li>
-      <li><a href="#one" title="Первая ссылка">Первая с title </a><a href="#two" title="Вторая ссылка">Вторая с title </a> <a href="#three" title="Третья ссылка">Третья с title</a></li>
-      <li><a>Ссылка без href</a></li>
-      <li><a href="">Ссылка с пустым href</a></li>
-      <li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-      <!--noindex--><li><a href="https://example.com">Ссылка, запрещенная для индексации поисковиками</a></li><!--/noindex-->
-      <li><p>Сон - это <a href="https://example.com">физиологическое состояние,</a> характеризующееся пониженной реакцией на окружающий мир</p></li>
-      <li><a href="https://example.com"><img src="https://www.memotest.ru//ImageUpload/a6167246-2d31-4649-9df8-1de8c42f5d2c/Dog-Tired-30.jpg" alt=""></a>"
-      <br>Ссылка-изображение</li>
-      <li><img src="Dog-Tired-30.jpg" usemap="#figuri" alt="">
-      <br>Ссылки из прямоугольных и круглых областей картинки</li>
-      <li><a href="info.html">Относительная на страницу в текущем каталоге</a></li>
-      <li><a href="./about/info.html"> Относительная на страницу в каталоге about</a></li>
-      <li><a href="./">Относительная на страницу в каталоге уровнем выше текущего</a></li>
-      <li><a href="../">Относительная на страницу в каталоге двумя уровнями выше</a></li>
-      <li><a href="/">Сокращенная на главную</a></li>
-      <li><a href="/asd">Сокращенная ссылку на внутреннюю</a></li>
-    </ol>
+                <br />
+                <a href="https://www.deviantart.com/join/" title="Опубликуйте арт">
+                    Опубликовать арт
+                </a>
+                <br />
+                <a href="https://www.deviantart.com/popular/deviations" title="Популярное">
+                    Поиск иллюстраций среди популярных
+                </a>
+                <br />
+                <a href="https://www.deviantart.com/topic" title="Поиск по темам">
+                    Темы иллюстраций
+                </a>
 
-    <h2 id = "Forma">Форма HTML</h2>
-      
+            </li>
+            <li><a>Без href</a> </li>
+            <li><a href="">Ссылка с пустым href</a></li>
+            <li><a href="index.html" rel="nofollow">Не перейти</a></li>
+            <li><noindex--><a href="https://example.com">Двенадцатое</a></noindex--></li>
+            <li><p>Текст с <em>выделенным</em> словом</p></li>
+            <li><img src="https://avatars.mds.yandex.net/i?id=b4f1f30825142de15af22f3b4c4d7c14-4121129-images-thumbs&n=13" alt="Ссылка на картинку" width="250" height="250" /></li>
+            <li>
+                <img src="https://github.com/ArtyomPrasol/ArtyomPrasol.github.io/blob/main/images.png?raw=true" usemap="#figuri" alt="Фигуры">
+                <map name="figuri">
+                    <area shape="rect" coords="15,15,55,55" href="pink.html" alt="розовый" />
+                    <area shape="circle" coords="100,75,50" href="blue.html" alt="голубой" />
+                </map>
+            </li>
+            <li><a href="about">Шестнадцать</a></li>
+            <li><a href="12">Семьнадцать</a></li>
+            <li><a href="../about">Восемьнадцать </a></li>
+            <li><a href="../../about">Девятнадцать</a></li>
+            <li><a href=”/about”>Двадцвать</a></li>
+            <li><a href=”/news/12”>Двадцвать один</a></li>
+        </ol>
+    </div>
 
-    <form action="/"
-      method="POST">
+    <br />
+    <!--Таблица-->
+    <div id="p2">
+        <h2>Таблица</h2>
+        <table>
+            <tr class="gr">
+                <th>Колонка1</th>
+                <th>Колонка2</th>
+                <th>Колонка3</th>
+            </tr>
+            <tr class="yl">
+                <td>Ячейка 11</td>
+                <td>Ячейка 12</td>
+                <td>Ячейка 13</td>
+            </tr>
+            <tr class="gr">
+                <td>Ячейка 21</td>
+                <td>Ячейка 22</td>
+                <td>Ячейка 23</td>
+            </tr>
+            <tr class="yl">
+                <td colspan="2">Ячейка 31 с 32 </td>
+                <td>Ячейка 33</td>
+            </tr>
+            <tr class="gr">
+                <td colspan="3">Ячейка 41,42,43</td>
+            </tr>
+            <tr class="yl">
+                <td>Ячейка 51</td>
+                <td>Ячейка 52</td>
+                <td>Ячейка 53</td>
+            </tr>
+        </table>
+    </div>
 
-      <label>
-        Введите имя:<br />
-        <input name="field-name-1" />
-      </label><br />
-
-      <label>
-        Введите ваш email:<br />
-        <input name="field-email"
-          type="email" />
-      </label><br />
-
-      <label>
-        Введите вашу дату рождения:<br />
-        <input name="field-date"
-          type="date" />
-      </label><br />
+    <br />
+    <!--Форма-->
+    <div id="p3">
+        <h2>Форма</h2>
+        <form action="/" method="POST">
+            <label>
+                Имя
+                <br>
+                <input name="Имя" value="Введите имя" />
+            </label>
+            <br>
+            <label>
+                E-mail
+                <br>
+                <input name="Почта" type="email" placeholder="Введите почту">
+            </label>
+            <br>
+            <label>
+                Дата
+                <br>
+                <input name="Дата" type="date" value="2022-09-08">
+            </label>
+            <br>
+            Пол
+            <br />
+            <label>
+                <input type="radio" name="radio1" checked="checked" value="Мужской" />
+                Мужской
+            </label>
+            <label>
+                <input type="radio" name="radio1" value="Женский" />
+                Женский
+            </label>
+            <br />
+            Сколько конечностей?
+            <label>
+                <input type="radio" name="radio2" checked="checked" value="4" />
+                4
+            </label>
+            <label>
+                <input type="radio" name="radio2" value="3" />
+                3
+            </label>
+            <label>
+                <input type="radio" name="radio2" value="2" />
+                2
+            </label>
+            <label>
+                <input type="radio" name="radio2" value="1" />
+                1
+            </label>
+            <label>
+                <input type="radio" name="radio2" value="0" />
+                0
+            </label>
+            <br />
+            Сверхспособности?
+            <br />
+            <select name="name-super-3[]" multiple="multiple">
+                <option value="Бессмертие" selected="selected">Бессмертие</option>
+                <option value="прохождение сквозь стены">прохождение сквозь стены</option>
+                <option value="левитация">левитация</option>
+            </select>
+            <br />
+            Биография?
+            <label>
+                <br />
+                <textarea name="field-name-2">Биография</textarea>
+            </label>
+            <br />
+            <label>
+                <input type="checkbox" checked="checked" name="check1" /> С контрактом ознакомлен(а)
+            </label>
+            <br />
+            Отправка формы
+            <input type="submit" value="Отправить" />
+        </form>
+    </div>
+    <br />
+    <footer>
+            <h4>
+                (c) Усачева Арина 2022
+            </h4>
         
-        Пол:<br />
-      <label><input type="radio"
-        name="radio-group-1" value="Значение1" />
-        Мужской</label>
-      <label><input type="radio"
-        name="radio-group-1" value="Значение2" />
-        Женский</label><br />
-        
-        Насколько сильно вы хотите спать:<br />
-      <label><input type="radio" 
-        name="radio-group-2" value="Значение1" />
-        1</label>
-      <label><input type="radio"
-        name="radio-group-2" value="Значение2" />
-        2</label>
-      <label><input type="radio"
-        name="radio-group-2" value="Значение3" />
-        3</label>
-      <label><input type="radio"
-        name="radio-group-2" value="Значение4" />
-        4</label>
-       <label><input type="radio"
-        name="radio-group-2" value="Значение5" />
-        5+</label><br />
-        
-        <label>
-        Чем чаще всего вы заняты:<br />
-        <select name="field-name-2">
-          <option value="Значение1">Сплю</option>
-          <option value="Значение2">Ем</option>
-          <option value="Значение3">Смотрю сериалы</option>
-        </select>
-      </label><br />
+    </footer>
+</body>
+</html>
 
-
-
-      <label>
-        Ваша биография:<br />
-        <textarea name="field-name-3"></textarea>
-      </label><br />
-
-
-
-      <br />
-      <label> 
-          С анкетой ознакомлен(a)
-        <input type="checkbox" 
-        name="check-1" />
-          </label><br /> 
-
-     
-      <input type="submit" value="Отправить" />
-    </form>
-
-  </body>
-
-</html> 
