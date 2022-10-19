@@ -1,0 +1,70 @@
+# arinausacheva.github.io
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <title>ArinaUsacheva</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class = "container-fluid">
+            <div class="d-flex flex-column">
+                <div class="col-sm-12 order-md-0 mx-auto">
+                    <header>
+                        <img class="float-left" src="imagine.png" alt="for search">
+                        <div class="text-center"> Mops.net </div>
+                    </header>
+                </div>
+                <div id="Orders" class="form-group col-sm-12 text-center col-md-7 p-1 order-md-2 mx-auto" >
+                    <form>
+                        <label>What do u want?: </label>
+                        <select name="prodType">
+                            <option value="1">Blue Crystals</option>
+                            <option value="2">Chicken from Los Pollos Hermanos</option>
+                            <option value="3">Helppppppp</option>
+                        </select>
+            
+                        <div id="radios">
+                            <label><input type="radio" name="prodOptions" value="option1" checked="checked">Yes</label>
+                            <label><input type="radio" name="prodOptions" value="option2" >No</label>
+                        </div>
+            
+                        <div id="checkboxes">
+                            How much?<br>
+            
+                            <label><input type="checkbox" name="prod1">10.01$</label>
+                            <label><input type="checkbox" name="prod2">100.1$</label>
+                            <label><input type="checkbox" name="prod3">1001$</label>
+                        </div>
+            
+                        <div>Count:<br></div>
+                        <input id="input" type="number" min="0" max="100" step="1" value="0">
+                        <br>
+                        Oplata:
+                        <button id="button1">OK</button>
+                        <div id="prodPrice"></div>
+            
+                    <button id = "Putter">Calculate</button>
+                    </form>
+                </div> 
+  
+                <div class="col-sm-12 text-center p-1 order-md-5 mx-auto">
+                    <footer>
+                        <h3> Usacheva Arina</h3>
+                        <h3> Bye </h3>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
