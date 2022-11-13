@@ -37,8 +37,8 @@ body{
 
 /*links*/
 #hyperlinks {
-    background-color: #ae68f0;
-    transition: 0.5s ease-in-out;
+    background-color: #08f700;
+    transition: 0.1s ease-in-out;
     border: 5px solid rgb(19, 76, 182);
 }
 
@@ -47,11 +47,11 @@ body{
 }
 
 #hyperlinks li{
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #hyperlinks li:hover {
-    background-color: #ae68f0;
+    background-color: #16be00;
 }
 
 #hyperlinks li.nocolor:hover{
@@ -59,7 +59,7 @@ body{
 }
     
 #hyperlinks li.nocolor{
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 /*table*/
@@ -99,4 +99,16 @@ form {
     background-color: #ffffff;
     border: 5px solid rgb(19, 76, 182);
     font-family: "Raleway", sans-serif;
+}
+
+button {
+    background-color: #ffffff;
+    border: 3px solid rgb(19, 76, 182);
+    color: black;
+}
+
+button:hover {
+    background-color: #ffffff;
+    border: 3px solid rgb(19, 76, 182);
+    color: black;
 }
