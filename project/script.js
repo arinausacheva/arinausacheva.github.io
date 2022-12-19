@@ -119,7 +119,7 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "https://formcarry.com/s/XZpnuvO5N",
+            url: "https://formcarry.com/s/vfDtw8Eju",
             data: data,
             success: function (response) {
                 if (response.status == "success") {
